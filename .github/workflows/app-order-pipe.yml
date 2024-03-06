@@ -1,6 +1,7 @@
 name: App Order CI/CD
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -44,10 +45,10 @@ jobs:
 
       - name: Build and Push to ECR
         run: |
-          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 905418088791.dkr.ecr.us-east-1.amazonaws.com
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_PASSWORD}}
           docker build -t order/production .
-          docker tag order/production:latest 905418088791.dkr.ecr.us-east-1.amazonaws.com/order/production:latest
-          docker push 905418088791.dkr.ecr.us-east-1.amazonaws.com/order/production:latest
+          docker tag order/production:latest ${{ secrets.AWS_ECR_PASSWORD}}/order/production:latest
+          docker push ${{ secrets.AWS_ECR_PASSWORD}}/order/production:latest
 
   deploy-aws:
     runs-on: ubuntu-latest
