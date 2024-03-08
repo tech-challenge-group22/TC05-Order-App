@@ -14,7 +14,10 @@ export class UpdateOrderStatusUseCase {
     try {
       orderGateway.beginTransaction();
 
+      let payment_status = 'Pendente';
+
       if (params.status === 3) {
+        payment_status = 'Aprovado';
         const message = {
           order_id: params.order_id,
         };
@@ -23,6 +26,10 @@ export class UpdateOrderStatusUseCase {
           QueueOutputUrl: `${process.env.AWS_OUTPUT_ORDER_QUEUE_RECEIVED_URL}`,
           MessageGroupId: `${process.env.AWS_MESSAGE_GROUP}`,
         });
+      }
+
+      if (params.status === 2) {
+        payment_status = 'Reprovado';
       }
 
       await orderGateway.updateOrderStatus(params.order_id, params.status);
@@ -35,7 +42,7 @@ export class UpdateOrderStatusUseCase {
       const messagePaymentStatus = {
         order_id: params.order_id,
         customer_id,
-        payment_status: params.status === 3 ? 'Aprovado' : 'Reprovado',
+        payment_status,
       };
 
       queueService.sendMessage({
