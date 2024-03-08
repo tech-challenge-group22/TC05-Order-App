@@ -25,9 +25,24 @@ export class UpdateOrderStatusUseCase {
         });
       }
 
-      orderGateway.updateOrderStatus(params.order_id, params.status);
+      await orderGateway.updateOrderStatus(params.order_id, params.status);
+
+      const orderInfo = await orderGateway.getOrders(params.order_id);
+      const customer_id = orderInfo[0].customer_id;
 
       orderGateway.commit();
+
+      const messagePaymentStatus = {
+        order_id: params.order_id,
+        customer_id,
+        payment_status: params.status === 3 ? 'Aprovado' : 'Reprovado',
+      };
+
+      queueService.sendMessage({
+        message: messagePaymentStatus,
+        QueueOutputUrl: `${process.env.AWS_OUTPUT_PAYMENT_STATUS_NOTIFICATION_URL}`,
+        MessageGroupId: `${process.env.AWS_MESSAGE_GROUP}`,
+      });
 
       const result: UpdateOrderStatusDTO = {
         hasError: false,
