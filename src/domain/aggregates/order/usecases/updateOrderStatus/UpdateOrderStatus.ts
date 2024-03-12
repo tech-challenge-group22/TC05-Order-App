@@ -14,10 +14,12 @@ export class UpdateOrderStatusUseCase {
     try {
       orderGateway.beginTransaction();
 
+      let order_status = params.status; // RECEBIDO (1) OU FINALIZADO (4)
       let payment_status = 'Pendente';
 
       if (params.status === 3) {
         payment_status = 'Aprovado';
+        order_status = 2; // CONFIRMADO
         const message = {
           order_id: params.order_id,
         };
@@ -29,10 +31,11 @@ export class UpdateOrderStatusUseCase {
       }
 
       if (params.status === 2) {
-        payment_status = 'Reprovado';
+        order_status = 3; // CANCELADO
+        payment_status = 'Rejeitado';
       }
 
-      await orderGateway.updateOrderStatus(params.order_id, params.status);
+      await orderGateway.updateOrderStatus(params.order_id, order_status);
 
       const orderInfo = await orderGateway.getOrders(params.order_id);
       const customer_id = orderInfo[0].customer_id;
