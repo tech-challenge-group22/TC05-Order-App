@@ -3,7 +3,17 @@ import { OrderGatewayInterface } from '../../../../../../../src/domain/aggregate
 import { UpdateOrderStatusUseCase } from '../../../../../../../src/domain/aggregates/order/usecases/updateOrderStatus/UpdateOrderStatus';
 
 const orderGatewayMock: OrderGatewayInterface = {
-  getOrders: jest.fn(),
+  getOrders: jest.fn().mockResolvedValue([
+    {
+      id: 6,
+      order_date: '2024-01 - 25T18:01:02.000Z',
+      order_total: 4.9,
+      customer_id: 1,
+      order_status: 1,
+      order_items:
+        '[{"qty": 1, "item": "Coca-cola", "price": 4.900000095367432}]',
+    },
+  ]),
   newOrder: jest.fn(),
   updateOrderStatus: jest.fn(),
   insertOrderItems: jest.fn(),
