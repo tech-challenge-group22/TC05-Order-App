@@ -23,6 +23,7 @@ export class UpdateOrderStatusUseCase {
         const message = {
           order_id: params.order_id,
         };
+        console.log('update order status message',message);
         queueService.sendMessage({
           message,
           QueueOutputUrl: `${process.env.AWS_OUTPUT_ORDER_QUEUE_RECEIVED_URL}`,
@@ -47,7 +48,7 @@ export class UpdateOrderStatusUseCase {
         customer_id,
         payment_status,
       };
-
+      console.log('notification message',message);
       queueService.sendMessage({
         message: messagePaymentStatus,
         QueueOutputUrl: `${process.env.AWS_OUTPUT_PAYMENT_STATUS_NOTIFICATION_URL}`,

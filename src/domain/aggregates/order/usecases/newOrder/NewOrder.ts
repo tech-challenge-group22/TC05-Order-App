@@ -51,6 +51,8 @@ export class NewOrderUseCase {
         payment_method: payment_method,
       };
 
+      console.log('new order message',message);
+      
       //Send message to PaymentQueueReceived.fifo
       queueService.sendMessage({
         message,

@@ -68,7 +68,7 @@ export default class AWSSQSAdapter implements IQueueService {
           const message = element;
           // Process the message
           const msgBody = JSON.parse(String(message.Body));
-          console.log({ msgBody });
+          console.log('payment processed',{ msgBody });
           await OrderController.updateOrderStatus({
             order_id: Number(msgBody.order_id),
             status: msgBody.payment_status,
@@ -104,7 +104,7 @@ export default class AWSSQSAdapter implements IQueueService {
           const message = element;
           // Process the message
           const msgBody = JSON.parse(String(message.Body));
-          console.log({ msgBody });
+          console.log('finished queue',{ msgBody });
           await OrderController.updateOrderStatus({
             order_id: Number(msgBody.order_id),
             status: 4,
