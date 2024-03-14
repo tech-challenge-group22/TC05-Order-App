@@ -48,7 +48,7 @@ export class UpdateOrderStatusUseCase {
         customer_id,
         payment_status,
       };
-      console.log('notification message',message);
+      console.log('notification message',messagePaymentStatus);
       queueService.sendMessage({
         message: messagePaymentStatus,
         QueueOutputUrl: `${process.env.AWS_OUTPUT_PAYMENT_STATUS_NOTIFICATION_URL}`,
