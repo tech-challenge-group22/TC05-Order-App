@@ -39,23 +39,23 @@ Este sistema é composto por uma série de dispositivos e interfaces que permite
 Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8P7aScD1-dboFIOZlOZoH7tCIXEe7/view?usp=drive_link">Arquitetura</a> 
 ![Tech Challenge FASE 05](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
 
-# Padrão SAGA - Coreografia
+## Padrão SAGA - Coreografia
 
 Optamos pelo padrão de Coreografia para nossa aplicação, a decisão se alinhou perfeitamente com o desenvolvimento natural do projeto ao longo do percurso e fases passadas. Ao chegarmos na Fase 05, notamos que, de forma quase intuitiva, já estávamos aplicando princípios da Coreografia em nosso trabalho. A escolha também se baseou em alguns dos benefícios chave que reconhecemos para o futuro do projeto:
 
-## Autonomia dos Serviços
+### 1. Autonomia dos Serviços
 
 Favorece a autonomia a cada serviço para que reaja a eventos de forma independente, reduzindo dependências diretas, facilitando a manutenção e escalabilidade.
 
-## Desacoplamento
+### 2. Desacoplamento
 
 Baixo acoplamento entre os serviços, facilitando futuras manutenções e escalabilidade.
 
-## Simplicidade e agilidade de desenvolvimento
+### 3. Simplicidade e agilidade de desenvolvimento
 
 Para a versão atual do nosso projeto, com menor complexidade, auxilia a simplificação do design e facilita o desenvolvimento ágil de novos serviços que apenas precisam reagir aos eventos existentes no sistema.
 
-## Flexibilidade Evolutiva
+### 4. Flexibilidade Evolutiva
 
 Oferece maior flexibilidade para a evolução do sistema, já que a adição de novas funcionalidades requer apenas a subscrição a eventos existentes ou a publicação de novos.
 
@@ -64,27 +64,20 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ![image](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png)
 
-## Iniciar Aplicação
-
-### Dependências
-
-<img src="https://github.com/kubernetes/minikube/raw/master/images/logo/logo.png" width="100" alt="minikube logo">
+## Iniciar Aplicação & Dependências
 
 ### Como montar o ambiente no lab
 
-1. Criar Buckets para cada repositório
-2. Preencher os nomes dos buckets S3 nas variáveis da organização
+1. Criar Buckets para o repositório
+2. Preencher o nome do bucket S3 recém criado nas variáveis da organização no GitHub
     - variáveis com inicial `TF_VAR_TFSTATE` + nome do serviço
-3. Rodar action de deploy do repositório `TC05-Shared-Infra`
+3. Após preencher as váriaveis de ambiente da organização no Github, executar a action de deploy do repositório `TC05-Shared-Infra`
 4. Ao completar o deploy do TC05-Shared-Infra, preencher as `urls das filas` nas `variáveis da organização`
 5. Rodar actions de deploy para `Customer-Infra` e `Customer-app`
 6. Ao completar deploy do MS de Customer
     - Criar Api Gateway ligada a lambda function `validate-customer`
     - Editar variável de ambiente `DB_HOST` da lambda com a url do `RDS` de `Customer`
     - Verificar se demais variáveis correspondem ao mesmo do `MS Customer`
-
-
-### Getting started:
 
 
 ## Documentação de APIs
