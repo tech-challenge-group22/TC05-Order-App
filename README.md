@@ -1,4 +1,4 @@
-![Tech Challenge Delivery System](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/delivery_system-banner.jpeg)
+![Tech Challenge Delivery System](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/delivery-system_fastfood.png)
 
 # Tech-Challenge - Delivery System
 
