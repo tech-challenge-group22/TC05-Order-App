@@ -1,4 +1,4 @@
-![Tech Challenge Delivery System](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/delivery-system_fastfood.png)
+![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/delivery-system_fastfood.png)
 
 # Tech-Challenge - Delivery System
 
@@ -37,7 +37,7 @@ Este sistema é composto por uma série de dispositivos e interfaces que permite
 ## Arquitetura da aplicação
 
 Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8P7aScD1-dboFIOZlOZoH7tCIXEe7/view?usp=drive_link">Arquitetura</a> 
-![Tech Challenge FASE 05](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
+![Tech Challenge FASE 05](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
 
 ## Padrão SAGA - Coreografia
 
@@ -62,7 +62,7 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ## Modelagem de Dados
 
-![image](https://github.com/tech-challenge-group22/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png)
+![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png)
 
 ## Iniciar Aplicação & Dependências
 
