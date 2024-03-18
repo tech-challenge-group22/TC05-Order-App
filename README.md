@@ -53,7 +53,7 @@ Nosso projeto utiliza uma abordagem híbrida de modelagem de dados, otimizada pa
 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados_relacional.png)
 
-- **Domínio Cliente, Pagamento, Pedido e Produto:**: Seguem um modelo relacional tradicional com o Amazon RDS (MySQL), aproveitando as vantagens de schemas consistentes e relações estabelecidas.
+- **Domínio Cliente, Pagamento, Pedido e Produto:** Seguem um modelo relacional tradicional com o Amazon RDS (MySQL), aproveitando as vantagens de schemas consistentes e relações estabelecidas.
 
 - **Domínio de Fila de Pedidos:** A fila de pedidos é gerenciada pelo Amazon DynamoDB, uma escolha estratégica que proporciona alta velocidade e flexibilidade, essenciais para o manejo eficiente dos status dos pedidos.
 
@@ -154,23 +154,26 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 ## Referências :pushpin:
 
 - **Repositórios**: [Veja aqui](https://github.com/orgs/tech-challenge-group22/repositories)
-    - [TC05-Shared-Infra](https://github.com/tech-challenge-group22/TC05-Shared-Infra)
-    
 
-    - [TC05-Customer-Infra](https://github.com/tech-challenge-group22/TC05-Customer-Infra)
-    - [TC05-Customer-App](https://github.com/tech-challenge-group22/TC05-Customer-App)
+### Shared Infrastructure
+- [TC05-Shared-Infra](https://github.com/tech-challenge-group22/TC05-Shared-Infra)
 
+### Customer Domain
+- [TC05-Customer-Infra](https://github.com/tech-challenge-group22/TC05-Customer-Infra)
+- [TC05-Customer-App](https://github.com/tech-challenge-group22/TC05-Customer-App)
 
-    - [TC05-Order-Infra](https://github.com/tech-challenge-group22/TC05-Order-Infra)
-    - [TC05-Order-App](https://github.com/tech-challenge-group22/TC05-Order-App)
+### Order Domain
+- [TC05-Order-Infra](https://github.com/tech-challenge-group22/TC05-Order-Infra)
+- [TC05-Order-App](https://github.com/tech-challenge-group22/TC05-Order-App)
 
+### Payment Domain
+- [TC05-Payment-Infra](https://github.com/tech-challenge-group22/TC05-Payment-Infra)
+- [TC05-Payment-App](https://github.com/tech-challenge-group22/TC05-Payment-App)
 
-    - [TC05-Payment-Infra](https://github.com/tech-challenge-group22/TC05-Payment-Infra)
-    - [TC05-Payment-App](https://github.com/tech-challenge-group22/TC05-Payment-App)
+### Queue System
+- [TC05-Queue-Infra](https://github.com/tech-challenge-group22/TC05-Queue-Infra)
+- [TC05-Queue-App](https://github.com/tech-challenge-group22/TC05-Queue-App)
 
-
-    - [TC05-Queue-Infra](https://github.com/tech-challenge-group22/TC05-Queue-Infra)
-    - [TC05-Queue-App](https://github.com/tech-challenge-group22/TC05-Queue-App)
 
 - **Documento Fase 3**: [Veja aqui](https://docs.google.com/document/d/1dF1EBIFeaUypjd8q5T7GGKYfnNoSGQr06fxbkmzGuwc/edit#heading=h.daycl68w2p0r)
 
