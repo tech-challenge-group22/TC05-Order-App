@@ -10,7 +10,7 @@ Porém, com esse crescimento vem o desafio de manter a eficiência e organizaç�
 A ausência de um sistema de gerenciamento de pedidos pode levar a confusão entre a equipe e a cozinha, resultando em atrasos e na preparação incorreta dos pedidos. Os pedidos podem se perder, ser mal interpretados ou esquecidos, levando à insatisfação dos clientes e potencial perda de negócios.
 
 Para enfrentar esses desafios, a lanchonete está investindo em um sistema de autoatendimento para fast-food. 
-Este sistema é composto por uma série de dispositivos e interfaces que permitem aos clientes selecionar e fazer pedidos sem a necessidade de interagir com um atendente, garantindo um serviço eficiente e eficaz ao cliente, enquanto gerencia pedidos e estoques de forma adequada, e para resolver o problema desde o design, até implementação do sistema, a lanchonete chamou os especialistas em Arquitetura de Software do Grupo 22.
+Este sistema é composto por uma série de dispositivos e interfaces que permitem aos clientes selecionar e fazer pedidos sem a necessidade de interagir com um atendente, garantindo um serviço eficiente e eficaz ao cliente, enquanto gerencia pedidos e estoques de forma adequada, e para resolver o problema desde o design, até implementação do sistema, a lanchonete chamou os especialistas em Arquitetura de Software do <b>Grupo 22</b>.
 
 ## Funcionalidades
 
@@ -64,6 +64,7 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 <!-- ## Modelagem de Dados
 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
+---
 
 ## Instruções para Deploy da solução 
 
