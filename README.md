@@ -108,7 +108,7 @@ Isso iniciará o Swagger com a documentação do serviço.
 ![image](https://github.com/fellipySaldanha/Phase2-TC/assets/43252661/cc96d1ff-27fb-4aaa-81e2-53872a3cc51b)
 
 
-## Relatórios de Segurança
+## Relatórios de Segurança :lock:
 
 ### Relatórios OWASP Zap
 
@@ -124,7 +124,7 @@ Segue o link do <a href="https://drive.google.com/file/d/1VC8olXbryNgMLntq4r0wvY
 
 Estes relatórios demonstram nossa diligência em manter nossa infraestrutura segura e confiável para nossos usuários, seguindo as melhores práticas do desenvolvimento seguro.
 
-## Demonstração
+## Demonstração :movie_camera:
 
 - **Introdução**: [Veja o vídeo](https://www.loom.com/share/362cdbdbeea142d19a70001925066d2a?sid=e9a3a40b-8193-41a9-84d8-7578d08b92ab)
 - **Infraestrutura AWS & Repositórios**: [Veja o vídeo](https://www.loom.com/share/92e4859b43a44577b7434e7ddfa7e408?sid=0c44f317-e1bf-41da-8b65-a0c1f141c1f7)
