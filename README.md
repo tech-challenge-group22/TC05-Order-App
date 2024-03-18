@@ -69,13 +69,14 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
 
-### Como construir a infraetrutura no ambiente do AWS lab.
+### Como construir a infraestrutura no ambiente do AWS lab.
 
 Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir toda a infraestrutura necessária para a aplicação.
 
-1. Criar os S3 Buckets para cada repositório.
-2. Preencher o nome do S3 buckets recém criados nas variáveis da organização no GitHub.
-    - variáveis com inicial `TF_VAR_TFSTATE` + nome do serviço
+1. Acessar o serviço do S3 na AWS.
+    - Iremos adicionar um bucket para cada repositório.
+2. Preencher o nome dos S3 buckets recém criados nas variáveis da organização no GitHub.
+    - Preencher as variáveis iniciadas com `TF_VAR_TFSTATE` + nome do serviço
 3. Após preencher as váriaveis de ambiente da organização, executar a action de deploy do repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">`TC05-Shared-Infra`</a>
 4. Ao finalizar o deploy da action do repositório TC05-Shared-Infra, preencher as `urls das filas` nas `variáveis da organização`
 5. Rodar as actions de deploy para <a href="https://github.com/tech-challenge-group22/TC05-Customer-Infra/actions">`Customer-Infra`</a> e <a href="https://github.com/tech-challenge-group22/TC05-Customer-App/actions">`Customer-app`</a>
@@ -103,5 +104,14 @@ Após iniciar a aplicação para cada repositório, executar o express com o nod
 Isso iniciará o Swagger com a documentação do serviço.
 
 ![image](https://github.com/fellipySaldanha/Phase2-TC/assets/43252661/cc96d1ff-27fb-4aaa-81e2-53872a3cc51b)
+
+### Agradecimentos ♥️
+
+À medida que concluímos este projeto de pós-graduação na FIAP, gostaríamos de expressar nossa profunda gratidão aos professores que foram pilares do nosso aprendizado e desenvolvimento: Professor Rubens, Professor Zenha e Professora Nathália. Sua orientação, conhecimento e apoio foram cruciais para o nosso sucesso.
+
+Um agradecimento especial para os colegas de grupo - Fabiano, Fellipy, Gabriel, Eduardo e Felipe - cuja colaboração, dedicação e criatividade tornaram este projeto não apenas possível, mas uma jornada verdadeiramente enriquecedora e inesquecível. Juntos, enfrentamos desafios, superamos obstáculos e compartilhamos momentos significativos de crescimento e aprendizado.
+
+Obrigado a todos por fazerem parte desta etapa importante da nossa jornada acadêmica e profissional.
+
 
 ![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/food_banner.png)
