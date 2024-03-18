@@ -46,19 +46,20 @@ Link para visualização externa: <a href="https://miro.com/app/board/uXjVMKvnUG
 ![DDD - Parte I](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/DDD-delivery_system.jpg)
 ![DDD - Parte II](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/DDD-delivery_system-services.jpg)
 
-## Modelagem de Dados
+## Modelagem de Dados :floppy_disk:
 
 Nosso projeto utiliza uma abordagem híbrida de modelagem de dados, otimizada para atender às necessidades específicas de cada domínio:
 
-Domínio Cliente, Pagamento, Pedido e Produto: Seguem um modelo relacional tradicional com o Amazon RDS (MySQL), aproveitando as vantagens de schemas consistentes e relações estabelecidas.
-
-Domínio de Fila de Pedidos: A fila de pedidos é gerenciada pelo Amazon DynamoDB, uma escolha estratégica que proporciona alta velocidade e flexibilidade, essenciais para o manejo eficiente dos status dos pedidos.
-
-Domínio de Produtos: Implementamos uma camada de cache usando o DynamoDB para otimizar o acesso a informações de produtos e categorias, crucial durante o cálculo do valor do pedido. Este sistema é atualizado por uma rota específica de refresh, garantindo que o cache reflita as informações mais recentes.
-
-Este modelo híbrido garante que cada domínio seja gerenciado da forma mais eficaz, equilibrando performance e consistência de acordo com as necessidades operacionais e de negócios.
 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados_relacional.png)
+
+- **Domínio Cliente, Pagamento, Pedido e Produto:**: Seguem um modelo relacional tradicional com o Amazon RDS (MySQL), aproveitando as vantagens de schemas consistentes e relações estabelecidas.
+
+- **Domínio de Fila de Pedidos:** A fila de pedidos é gerenciada pelo Amazon DynamoDB, uma escolha estratégica que proporciona alta velocidade e flexibilidade, essenciais para o manejo eficiente dos status dos pedidos.
+
+- **Domínio de Produtos:** Implementamos uma camada de cache usando o DynamoDB para otimizar o acesso a informações de produtos e categorias, crucial durante o cálculo do valor do pedido. Este sistema é atualizado por uma rota específica de refresh, garantindo que o cache reflita as informações mais recentes.
+
+Este modelo híbrido garante que cada domínio seja gerenciado da forma mais eficaz, equilibrando performance e consistência de acordo com as necessidades operacionais e de negócios.
 
 ## SAGA Pattern - Coreografia :cartwheeling:
 
@@ -86,7 +87,7 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
 
-### Iniciando a infraestrutura no ambiente do AWS lab. :cloud:
+### Iniciando a infraestrutura no ambiente do AWS lab :cloud:
 
 Toda nossa infraestrutura está montada utilizando a AWS e Github.
 Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir a infraestrutura necessária para a execução das aplicações.
@@ -150,7 +151,7 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 - **Demonstração - Parte III**: [Veja o vídeo](https://www.loom.com/share/9d6f2f23aa4b4e498bc4254db8ed7b62?sid=bd243950-1745-4892-8dc3-98cbbe0f295a)
 
 ---
-## Referências
+## Referências :pushpin:
 
 - **Repositórios**: [Veja aqui](https://github.com/orgs/tech-challenge-group22/repositories)
     - [TC05-Shared-Infra](https://github.com/tech-challenge-group22/TC05-Shared-Infra)
