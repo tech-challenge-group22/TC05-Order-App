@@ -76,7 +76,7 @@ Toda nossa infraestrutura está montada utilizando a AWS e Github.
 Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir a infraestrutura necessária para a execução das aplicações.
 
 1. Acessar o serviço do S3 na AWS.
-    - Iremos adicionar um bucket para cada repositório.
+    - Iremos adicionar um bucket para cada serviço.
 2. Preencher o nome dos S3 buckets recém criados nas variáveis da organização no GitHub.
     - Preencher as variáveis iniciadas com `TF_VAR_TFSTATE` + nome do serviço
 3. Após preencher as váriaveis de ambiente da organização, executar a action de deploy do repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">`TC05-Shared-Infra`</a>
