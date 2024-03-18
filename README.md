@@ -40,6 +40,26 @@ Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8
 
 ![Tech Challenge FASE 05](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
 
+### Domain Driven Design
+
+Link para visualização externa: <a href="https://miro.com/app/board/uXjVMKvnUGA=/?share_link_id=537199265716">DDD</a>
+![DDD - Parte I](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/DDD-delivery_system.jpg)
+![DDD - Parte II](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/DDD-delivery_system-services.jpg)
+
+## Modelagem de Dados
+
+Nosso projeto utiliza uma abordagem híbrida de modelagem de dados, otimizada para atender às necessidades específicas de cada domínio:
+
+Domínio Cliente, Pagamento, Pedido e Produto: Seguem um modelo relacional tradicional com o Amazon RDS (MySQL), aproveitando as vantagens de schemas consistentes e relações estabelecidas.
+
+Domínio de Fila de Pedidos: A fila de pedidos é gerenciada pelo Amazon DynamoDB, uma escolha estratégica que proporciona alta velocidade e flexibilidade, essenciais para o manejo eficiente dos status dos pedidos.
+
+Domínio de Produtos: Implementamos uma camada de cache usando o DynamoDB para otimizar o acesso a informações de produtos e categorias, crucial durante o cálculo do valor do pedido. Este sistema é atualizado por uma rota específica de refresh, garantindo que o cache reflita as informações mais recentes.
+
+Este modelo híbrido garante que cada domínio seja gerenciado da forma mais eficaz, equilibrando performance e consistência de acordo com as necessidades operacionais e de negócios.
+
+![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados_relacional.png)
+
 ## SAGA Pattern - Coreografia :cartwheeling:
 
 Optamos pelo padrão de Coreografia para nossa aplicação, a decisão se alinhou perfeitamente com o desenvolvimento natural do projeto ao longo do percurso e fases passadas. Ao chegarmos na Fase 05, notamos que, de forma quase intuitiva, já estávamos aplicando princípios da Coreografia em nosso trabalho. A escolha também se baseou em alguns dos benefícios chave que reconhecemos para o futuro do projeto:
@@ -60,10 +80,6 @@ Para a versão atual do nosso projeto, com menor complexidade, auxilia a simplif
 
 Oferece maior flexibilidade para a evolução do sistema, já que a adição de novas funcionalidades requer apenas a subscrição a eventos existentes ou a publicação de novos.
 
-
-<!-- ## Modelagem de Dados
-
-![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
 ---
 
 ## Instruções para Deploy da solução :building_construction:
@@ -132,6 +148,26 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 - **Demonstração - Parte I**: [Veja o vídeo](https://www.loom.com/share/e801d167cd114db08d643af389ebd3e3?sid=11028dda-1c26-472a-800a-5c8f06de31b0)
 - **Demonstração - Parte II**: [Veja o vídeo](https://www.loom.com/share/4688560bc5cb408aa252e37bc34af759?sid=d8ccc04c-47c2-4e99-8554-742cd0de72dd)
 - **Demonstração - Parte III**: [Veja o vídeo](https://www.loom.com/share/9d6f2f23aa4b4e498bc4254db8ed7b62?sid=bd243950-1745-4892-8dc3-98cbbe0f295a)
+
+---
+## Referências
+
+- **Repositórios**: [Veja aqui](https://github.com/orgs/tech-challenge-group22/repositories)
+    - [TC05-Shared-Infra](https://github.com/tech-challenge-group22/TC05-Shared-Infra)
+    
+    - [TC05-Customer-Infra](https://github.com/tech-challenge-group22/TC05-Customer-Infra)
+    - [TC05-Customer-App](https://github.com/tech-challenge-group22/TC05-Customer-App)
+
+    - [TC05-Order-Infra](https://github.com/tech-challenge-group22/TC05-Order-Infra)
+    - [TC05-Order-App](https://github.com/tech-challenge-group22/TC05-Order-App)
+
+    - [TC05-Payment-Infra](https://github.com/tech-challenge-group22/TC05-Payment-Infra)
+    - [TC05-Payment-App](https://github.com/tech-challenge-group22/TC05-Payment-App)
+
+    - [TC05-Queue-Infra](https://github.com/tech-challenge-group22/TC05-Queue-Infra)
+    - [TC05-Queue-App](https://github.com/tech-challenge-group22/TC05-Queue-App)
+
+- **Documento Fase 3**: [Veja aqui](https://docs.google.com/document/d/1dF1EBIFeaUypjd8q5T7GGKYfnNoSGQr06fxbkmzGuwc/edit#heading=h.daycl68w2p0r)
 
 ## Agradecimentos ♥️
 
