@@ -34,7 +34,7 @@ Este sistema é composto por uma série de dispositivos e interfaces que permite
 - AWS S3
 - AWS SQS
 
-## Arquitetura da aplicação
+## Arquitetura da Solução
 
 Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8P7aScD1-dboFIOZlOZoH7tCIXEe7/view?usp=drive_link">Arquitetura</a> 
 
@@ -65,13 +65,14 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
 
-## Quick Start & Dependências 
+## Instruções para Deploy da aplicação 
 
 ![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
 
-### Como construir a infraestrutura no ambiente do AWS lab.
+### Como construir a infraestrutura no ambiente do AWS lab. :cloud:
 
-Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir toda a infraestrutura necessária para a aplicação.
+Toda nossa infraestrutura está montada utilizando a AWS e Github.
+Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir a infraestrutura necessária para a aplicação.
 
 1. Acessar o serviço do S3 na AWS.
     - Iremos adicionar um bucket para cada repositório.
@@ -85,9 +86,9 @@ Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para constr
     - Editar variável de ambiente `DB_HOST` da lambda com a url do `RDS` de `Customer`
     - Verificar se demais variáveis correspondem ao mesmo do `MS Customer`
 
-#### Observações
+#### Observações de Deploy
 
-A criação de todas as filas e da função lambda estão sendo feitas pelo repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">TC05-Shared-Infra</a>
+A criação de todas as filas e da função lambda estão sendo realizadas pelo repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">TC05-Shared-Infra</a>
 Todos os repositórios estão utilizando secrets e variáveis de nossa organização no Github, sendo compartilhadas entre todos os repositórios.
 
 ![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/variaveis_organizacao.png)
@@ -98,16 +99,43 @@ Para executar o workflow para deploy da Infra AWS ou para realizar o build da im
 
 Após a execução ser finalizada, precisamos criar o API Gateway na função Lambda.
 
-## Documentação de APIs
+### Documentação de APIs
 
 Após iniciar a aplicação para cada repositório, executar o express com o node.js e acessar o link exibido no terminal e adicionar `/api-docs` ao final da URL.
 Isso iniciará o Swagger com a documentação do serviço.
 
 ![image](https://github.com/fellipySaldanha/Phase2-TC/assets/43252661/cc96d1ff-27fb-4aaa-81e2-53872a3cc51b)
 
-### Agradecimentos ♥️
 
-À medida que concluímos este projeto de pós-graduação na FIAP, gostaríamos de expressar nossa profunda gratidão aos professores que foram pilares do nosso aprendizado e desenvolvimento: Professor Rubens, Professor Zenha e Professora Nathália. Sua orientação, conhecimento e apoio foram cruciais para o nosso sucesso.
+## Relatórios de Segurança
+
+### Relatórios OWASP Zap
+
+Felizmente, em nossa análise inicial do relatório de OWASP Zap, não foi detectado nenhuma vulnerabilidade de nível alto. 
+Seguem os relatórios detalhados:
+
+- **Listar/Exibir Cardápio**: [Veja o relatório](https://drive.google.com/file/d/1mWfcgvuW_a_6O1BMkPwL6f59yzeX-H-H/view?usp=drive_link)
+- **Realização de Pedido (Checkout) e Geração do Pagamento**: [Veja o relatório](https://drive.google.com/file/d/1cFa7kf88K5yWIAzoakiirdtedLTTMKPj/view?usp=drive_link) - Este relatório cobre ambas as funcionalidades. A geração do pagamento é tratada internamente através da comunicação assíncrona entre os serviços de Pedido e Pagamento, utilizando suas respectivas filas. Assim, a Geração do Pagamento é intrinsecamente parte do processo de criação do Pedido.
+- **Confirmação do Pagamento (Webhook)**: [Veja o relatório](https://drive.google.com/file/d/1raaGH703ores607-r0jK3ae0qGvWSHdy/view?usp=drive_link)
+
+### Relatório RIPD
+Segue o link do <a href="https://drive.google.com/file/d/1VC8olXbryNgMLntq4r0wvYu4Hk-NNvrR/view?usp=sharing">Relatório de Impacto de Dados Pessoais</a> da nossa solução.
+
+Estes relatórios demonstram nossa diligência em manter nossa infraestrutura segura e confiável para nossos usuários, seguindo as melhores práticas do desenvolvimento seguro.
+
+## Demonstração
+
+- ** Introdução **: [Veja o vídeo](https://www.loom.com/share/362cdbdbeea142d19a70001925066d2a?sid=e9a3a40b-8193-41a9-84d8-7578d08b92ab)
+- ** Infraestrutura AWS & Repositórios **: [Veja o vídeo](https://www.loom.com/share/92e4859b43a44577b7434e7ddfa7e408?sid=0c44f317-e1bf-41da-8b65-a0c1f141c1f7)
+- ** Infra AWS e Repositórios - parte II  **: [Veja o vídeo](https://www.loom.com/share/e0b20901f415445391fcebdae99e6e98?sid=13e316c2-f760-4a77-a821-74167c5ddd5d)
+- ** Demonstração - Parte I **: [Veja o vídeo](https://www.loom.com/share/e801d167cd114db08d643af389ebd3e3?sid=11028dda-1c26-472a-800a-5c8f06de31b0)
+- ** Demonstração - Parte II **: [Veja o vídeo](https://www.loom.com/share/4688560bc5cb408aa252e37bc34af759?sid=d8ccc04c-47c2-4e99-8554-742cd0de72dd)
+- ** Demonstração - Parte III **: [Veja o vídeo](https://www.loom.com/share/9d6f2f23aa4b4e498bc4254db8ed7b62?sid=bd243950-1745-4892-8dc3-98cbbe0f295a)
+
+## Agradecimentos ♥️
+
+À medida que concluímos este projeto da Pos-Tech na FIAP, gostaríamos de expressar nossa profunda gratidão aos professores que foram pilares do nosso aprendizado e desenvolvimento:
+Professora Nathália, Professor Rubens e Professor Zenha. Sua orientação, conhecimento e apoio foram cruciais para o nosso sucesso.
 
 Um agradecimento especial para os colegas de grupo - Fabiano, Fellipy, Gabriel, Eduardo e Felipe - cuja colaboração, dedicação e criatividade tornaram este projeto não apenas possível, mas uma jornada verdadeiramente enriquecedora e inesquecível. Juntos, enfrentamos desafios, superamos obstáculos e compartilhamos momentos significativos de crescimento e aprendizado.
 
