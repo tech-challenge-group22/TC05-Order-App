@@ -10,7 +10,7 @@ Porém, com esse crescimento vem o desafio de manter a eficiência e organizaç�
 A ausência de um sistema de gerenciamento de pedidos pode levar a confusão entre a equipe e a cozinha, resultando em atrasos e na preparação incorreta dos pedidos. Os pedidos podem se perder, ser mal interpretados ou esquecidos, levando à insatisfação dos clientes e potencial perda de negócios.
 
 Para enfrentar esses desafios, a lanchonete está investindo em um sistema de autoatendimento para fast-food. 
-Este sistema é composto por uma série de dispositivos e interfaces que permitem aos clientes selecionar e fazer pedidos sem a necessidade de interagir com um atendente, garantindo um serviço eficiente e eficaz ao cliente, enquanto gerencia pedidos e estoques de forma adequada, e resolver o problema com desde o design a implementação do sistema, a lanchonete chamou os especialistas em Arquitetura de Software do Grupo 22.
+Este sistema é composto por uma série de dispositivos e interfaces que permitem aos clientes selecionar e fazer pedidos sem a necessidade de interagir com um atendente, garantindo um serviço eficiente e eficaz ao cliente, enquanto gerencia pedidos e estoques de forma adequada, e para resolver o problema desde o design, até implementação do sistema, a lanchonete chamou os especialistas em Arquitetura de Software do Grupo 22.
 
 ## Funcionalidades
 
@@ -70,10 +70,12 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ### Como montar o ambiente no lab
 
+Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para montar toda a infraestrutura necessária para a aplicação.
+
 1. Criar Buckets para o repositório
 2. Preencher o nome do bucket S3 recém criado nas variáveis da organização no GitHub
     - variáveis com inicial `TF_VAR_TFSTATE` + nome do serviço
-3. Após preencher as váriaveis de ambiente da organização no Github, executar a action de deploy do repositório `TC05-Shared-Infra`
+3. Após preencher as váriaveis de ambiente da organização, executar a action de deploy do repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">`TC05-Shared-Infra`</a>
 4. Ao completar o deploy do TC05-Shared-Infra, preencher as `urls das filas` nas `variáveis da organização`
 5. Rodar actions de deploy para `Customer-Infra` e `Customer-app`
 6. Ao completar deploy do MS de Customer
@@ -86,7 +88,11 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 A criação de todas as filas e da função lambda estão sendo feitas pelo repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">TC05-Shared-Infra</a>
 Todos os repositórios estão utilizando secrets e variáveis de nossa organização no Github, sendo compartilhadas entre todos os repositórios.
 
-Para rodar o workflow para deploy da Infra AWS ou para realizar o build da imagem docker, só precisamos selecionar a action "Deploy Infrastructure" e depois executar o workflow.
+![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/variaveis_organizacao.png)
+
+Para executar o workflow para deploy da Infra AWS ou para realizar o build da imagem docker, só precisamos selecionar a action "Deploy Infrastructure" e depois executar o workflow.
+
+![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/workflow_example.png)
 
 Após a execução ser finalizada, precisamos criar o API Gateway na função Lambda.
 
