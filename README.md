@@ -158,19 +158,19 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 ### Shared Infrastructure
 - [TC05-Shared-Infra](https://github.com/tech-challenge-group22/TC05-Shared-Infra)
 
-### Customer Domain
+### Domínio de Clientes
 - [TC05-Customer-Infra](https://github.com/tech-challenge-group22/TC05-Customer-Infra)
 - [TC05-Customer-App](https://github.com/tech-challenge-group22/TC05-Customer-App)
 
-### Order Domain
+### Domínio de Pedido
 - [TC05-Order-Infra](https://github.com/tech-challenge-group22/TC05-Order-Infra)
 - [TC05-Order-App](https://github.com/tech-challenge-group22/TC05-Order-App)
 
-### Payment Domain
+### Domínio de Pagamento
 - [TC05-Payment-Infra](https://github.com/tech-challenge-group22/TC05-Payment-Infra)
 - [TC05-Payment-App](https://github.com/tech-challenge-group22/TC05-Payment-App)
 
-### Queue System
+### Domínio de Fila de pedidos
 - [TC05-Queue-Infra](https://github.com/tech-challenge-group22/TC05-Queue-Infra)
 - [TC05-Queue-App](https://github.com/tech-challenge-group22/TC05-Queue-App)
 
