@@ -156,14 +156,18 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 - **Repositórios**: [Veja aqui](https://github.com/orgs/tech-challenge-group22/repositories)
     - [TC05-Shared-Infra](https://github.com/tech-challenge-group22/TC05-Shared-Infra)
     
+
     - [TC05-Customer-Infra](https://github.com/tech-challenge-group22/TC05-Customer-Infra)
     - [TC05-Customer-App](https://github.com/tech-challenge-group22/TC05-Customer-App)
+
 
     - [TC05-Order-Infra](https://github.com/tech-challenge-group22/TC05-Order-Infra)
     - [TC05-Order-App](https://github.com/tech-challenge-group22/TC05-Order-App)
 
+
     - [TC05-Payment-Infra](https://github.com/tech-challenge-group22/TC05-Payment-Infra)
     - [TC05-Payment-App](https://github.com/tech-challenge-group22/TC05-Payment-App)
+
 
     - [TC05-Queue-Infra](https://github.com/tech-challenge-group22/TC05-Queue-Infra)
     - [TC05-Queue-App](https://github.com/tech-challenge-group22/TC05-Queue-App)
