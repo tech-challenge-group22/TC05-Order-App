@@ -28,7 +28,7 @@ Este sistema é composto por uma série de dispositivos e interfaces que permite
 - Node.js
 - TypeScript
 - Express
-- MySQL (AWS RDS)
+- AWS RDS
 - DynamoDB
 - Docker  (AWS ECS)
 - AWS S3
@@ -60,11 +60,13 @@ Para a versão atual do nosso projeto, com menor complexidade, auxilia a simplif
 Oferece maior flexibilidade para a evolução do sistema, já que a adição de novas funcionalidades requer apenas a subscrição a eventos existentes ou a publicação de novos.
 
 
-## Modelagem de Dados
+<!-- ## Modelagem de Dados
 
-![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png)
+![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
 
-## Iniciar Aplicação & Dependências
+![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
+
+## Quick Start & Dependências 
 
 ### Como montar o ambiente no lab
 
@@ -79,10 +81,19 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
     - Editar variável de ambiente `DB_HOST` da lambda com a url do `RDS` de `Customer`
     - Verificar se demais variáveis correspondem ao mesmo do `MS Customer`
 
+#### Observações
+
+A criação de todas as filas e da função lambda estão sendo feitas pelo repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">TC05-Shared-Infra</a>
+Todos os repositórios estão utilizando secrets e variáveis de nossa organização no Github, sendo compartilhadas entre todos os repositórios.
+
+Para rodar o workflow para deploy da Infra AWS ou para realizar o build da imagem docker, só precisamos selecionar a action "Deploy Infrastructure" e depois executar o workflow.
+
+Após a execução ser finalizada, precisamos criar o API Gateway na função Lambda.
 
 ## Documentação de APIs
 
 Após iniciar a aplicação no minikube, acessar o link exibido no terminal e adicionar ao final `/api-docs`
-![image](https://github.com/fellipySaldanha/Phase2-TC/assets/43252661/5dc8cbe3-b9ce-4afe-8cf0-c1202ff47b9b)
 
 ![image](https://github.com/fellipySaldanha/Phase2-TC/assets/43252661/cc96d1ff-27fb-4aaa-81e2-53872a3cc51b)
+
+![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/food_banner.png)
