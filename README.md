@@ -4,7 +4,7 @@
 
 ## Introdução
 
-No coração de um bairro em crescimento, uma lanchonete local está passando por uma significativa expansão devido ao seu sucesso. 
+No coração de um bairro em crescimento, uma lanchonete local está passando por uma significativa expansão devido ao seu sucesso.<br>
 Porém, com esse crescimento vem o desafio de manter a eficiência e organização no atendimento aos clientes. Sem um sistema adequado de gerenciamento de pedidos, o serviço ao cliente pode se tornar caótico e confuso. Considerando um cliente que faz um pedido de um hambúrguer personalizado com ingredientes específicos, acompanhado de batatas fritas e uma bebida. O pedido pode ser anotado à mão e passado para a cozinha, mas não há garantia de que será preparado corretamente.
 
 A ausência de um sistema de gerenciamento de pedidos pode levar a confusão entre a equipe e a cozinha, resultando em atrasos e na preparação incorreta dos pedidos. Os pedidos podem se perder, ser mal interpretados ou esquecidos, levando à insatisfação dos clientes e potencial perda de negócios.
@@ -37,9 +37,10 @@ Este sistema é composto por uma série de dispositivos e interfaces que permite
 ## Arquitetura da aplicação
 
 Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8P7aScD1-dboFIOZlOZoH7tCIXEe7/view?usp=drive_link">Arquitetura</a> 
+
 ![Tech Challenge FASE 05](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
 
-## Padrão SAGA - Coreografia
+## SAGA Pattern - Coreografia
 
 Optamos pelo padrão de Coreografia para nossa aplicação, a decisão se alinhou perfeitamente com o desenvolvimento natural do projeto ao longo do percurso e fases passadas. Ao chegarmos na Fase 05, notamos que, de forma quase intuitiva, já estávamos aplicando princípios da Coreografia em nosso trabalho. A escolha também se baseou em alguns dos benefícios chave que reconhecemos para o futuro do projeto:
 
@@ -64,20 +65,20 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
 
-![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
-
 ## Quick Start & Dependências 
 
-### Como montar o ambiente no lab
+![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
 
-Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para montar toda a infraestrutura necessária para a aplicação.
+### Como construir a infraetrutura no ambiente do AWS lab.
 
-1. Criar Buckets para o repositório
-2. Preencher o nome do bucket S3 recém criado nas variáveis da organização no GitHub
+Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir toda a infraestrutura necessária para a aplicação.
+
+1. Criar os S3 Buckets para cada repositório.
+2. Preencher o nome do S3 buckets recém criados nas variáveis da organização no GitHub.
     - variáveis com inicial `TF_VAR_TFSTATE` + nome do serviço
 3. Após preencher as váriaveis de ambiente da organização, executar a action de deploy do repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">`TC05-Shared-Infra`</a>
-4. Ao completar o deploy do TC05-Shared-Infra, preencher as `urls das filas` nas `variáveis da organização`
-5. Rodar actions de deploy para `Customer-Infra` e `Customer-app`
+4. Ao finalizar o deploy da action do repositório TC05-Shared-Infra, preencher as `urls das filas` nas `variáveis da organização`
+5. Rodar as actions de deploy para <a href="https://github.com/tech-challenge-group22/TC05-Customer-Infra/actions">`Customer-Infra`</a> e <a href="https://github.com/tech-challenge-group22/TC05-Customer-App/actions">`Customer-app`</a>
 6. Ao completar deploy do MS de Customer
     - Criar Api Gateway ligada a lambda function `validate-customer`
     - Editar variável de ambiente `DB_HOST` da lambda com a url do `RDS` de `Customer`
@@ -98,7 +99,8 @@ Após a execução ser finalizada, precisamos criar o API Gateway na função La
 
 ## Documentação de APIs
 
-Após iniciar a aplicação no minikube, acessar o link exibido no terminal e adicionar ao final `/api-docs`
+Após iniciar a aplicação para cada repositório, executar o express com o node.js e acessar o link exibido no terminal e adicionar `/api-docs` ao final da URL.
+Isso iniciará o Swagger com a documentação do serviço.
 
 ![image](https://github.com/fellipySaldanha/Phase2-TC/assets/43252661/cc96d1ff-27fb-4aaa-81e2-53872a3cc51b)
 
