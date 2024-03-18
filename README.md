@@ -65,14 +65,14 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
 
-## Instruções para Deploy da aplicação 
+## Instruções para Deploy da solução 
 
 ![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
 
-### Como construir a infraestrutura no ambiente do AWS lab. :cloud:
+### Iniciando a infraestrutura no ambiente do AWS lab. :cloud:
 
 Toda nossa infraestrutura está montada utilizando a AWS e Github.
-Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir a infraestrutura necessária para a aplicação.
+Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para construir a infraestrutura necessária para a execução das aplicações.
 
 1. Acessar o serviço do S3 na AWS.
     - Iremos adicionar um bucket para cada repositório.
@@ -125,12 +125,12 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 
 ## Demonstração
 
-- ** Introdução **: [Veja o vídeo](https://www.loom.com/share/362cdbdbeea142d19a70001925066d2a?sid=e9a3a40b-8193-41a9-84d8-7578d08b92ab)
-- ** Infraestrutura AWS & Repositórios **: [Veja o vídeo](https://www.loom.com/share/92e4859b43a44577b7434e7ddfa7e408?sid=0c44f317-e1bf-41da-8b65-a0c1f141c1f7)
-- ** Infra AWS e Repositórios - parte II  **: [Veja o vídeo](https://www.loom.com/share/e0b20901f415445391fcebdae99e6e98?sid=13e316c2-f760-4a77-a821-74167c5ddd5d)
-- ** Demonstração - Parte I **: [Veja o vídeo](https://www.loom.com/share/e801d167cd114db08d643af389ebd3e3?sid=11028dda-1c26-472a-800a-5c8f06de31b0)
-- ** Demonstração - Parte II **: [Veja o vídeo](https://www.loom.com/share/4688560bc5cb408aa252e37bc34af759?sid=d8ccc04c-47c2-4e99-8554-742cd0de72dd)
-- ** Demonstração - Parte III **: [Veja o vídeo](https://www.loom.com/share/9d6f2f23aa4b4e498bc4254db8ed7b62?sid=bd243950-1745-4892-8dc3-98cbbe0f295a)
+- **Introdução**: [Veja o vídeo](https://www.loom.com/share/362cdbdbeea142d19a70001925066d2a?sid=e9a3a40b-8193-41a9-84d8-7578d08b92ab)
+- **Infraestrutura AWS & Repositórios**: [Veja o vídeo](https://www.loom.com/share/92e4859b43a44577b7434e7ddfa7e408?sid=0c44f317-e1bf-41da-8b65-a0c1f141c1f7)
+- **Infra AWS e Repositórios - parte II**: [Veja o vídeo](https://www.loom.com/share/e0b20901f415445391fcebdae99e6e98?sid=13e316c2-f760-4a77-a821-74167c5ddd5d)
+- **Demonstração - Parte I**: [Veja o vídeo](https://www.loom.com/share/e801d167cd114db08d643af389ebd3e3?sid=11028dda-1c26-472a-800a-5c8f06de31b0)
+- **Demonstração - Parte II**: [Veja o vídeo](https://www.loom.com/share/4688560bc5cb408aa252e37bc34af759?sid=d8ccc04c-47c2-4e99-8554-742cd0de72dd)
+- **Demonstração - Parte III**: [Veja o vídeo](https://www.loom.com/share/9d6f2f23aa4b4e498bc4254db8ed7b62?sid=bd243950-1745-4892-8dc3-98cbbe0f295a)
 
 ## Agradecimentos ♥️
 
