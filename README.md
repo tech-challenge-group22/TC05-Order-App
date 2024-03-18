@@ -176,7 +176,7 @@ Estes relatórios demonstram nossa diligência em manter nossa infraestrutura se
 - [TC05-Queue-Infra](https://github.com/tech-challenge-group22/TC05-Queue-Infra)
 - [TC05-Queue-App](https://github.com/tech-challenge-group22/TC05-Queue-App)
 
-
+---
 ## Agradecimentos ♥️
 
 À medida que concluímos este projeto da Pos-Tech na FIAP, gostaríamos de expressar nossa profunda gratidão aos professores que foram pilares do nosso aprendizado e desenvolvimento:
