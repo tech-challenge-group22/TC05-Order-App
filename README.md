@@ -40,7 +40,7 @@ Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8
 
 ![Tech Challenge FASE 05](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
 
-## SAGA Pattern - Coreografia
+## SAGA Pattern - Coreografia :cartwheeling:
 
 Optamos pelo padrão de Coreografia para nossa aplicação, a decisão se alinhou perfeitamente com o desenvolvimento natural do projeto ao longo do percurso e fases passadas. Ao chegarmos na Fase 05, notamos que, de forma quase intuitiva, já estávamos aplicando princípios da Coreografia em nosso trabalho. A escolha também se baseou em alguns dos benefícios chave que reconhecemos para o futuro do projeto:
 
@@ -66,7 +66,7 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 ![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados.png) -->
 ---
 
-## Instruções para Deploy da solução 
+## Instruções para Deploy da solução :building_construction:
 
 ![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
 
@@ -100,7 +100,7 @@ Para executar o workflow para deploy da Infra AWS ou para realizar o build da im
 
 Após a execução ser finalizada, precisamos criar o API Gateway na função Lambda.
 
-### Documentação de APIs
+### Documentação de APIs :bookmark_tabs:
 
 Após iniciar a aplicação para cada repositório, executar o express com o node.js e acessar o link exibido no terminal e adicionar `/api-docs` ao final da URL.
 Isso iniciará o Swagger com a documentação do serviço.
