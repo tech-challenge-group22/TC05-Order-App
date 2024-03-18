@@ -1,4 +1,4 @@
-![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/delivery-system_fastfood.png)
+![Tech Challenge Delivery System](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\delivery-system_fastfood.png)
 
 # Tech-Challenge - Delivery System
 
@@ -38,20 +38,20 @@ Este sistema é composto por uma série de dispositivos e interfaces que permite
 
 Link para visualização externa: <a href="https://drive.google.com/file/d/1i-Q8P7aScD1-dboFIOZlOZoH7tCIXEe7/view?usp=drive_link">Arquitetura</a> 
 
-![Tech Challenge FASE 05](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/tech-challenge-FASE05-Arquitetura.png)
+![Tech Challenge FASE 05](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\tech-challenge-FASE05-Arquitetura.png)
 
 ### Domain Driven Design
 
 Link para visualização externa: <a href="https://miro.com/app/board/uXjVMKvnUGA=/?share_link_id=537199265716">DDD</a>
-![DDD - Parte I](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/DDD-delivery_system.jpg)
-![DDD - Parte II](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/DDD-delivery_system-services.jpg)
+![DDD - Parte I](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\DDD-delivery_system.jpg)
+![DDD - Parte II](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\DDD-delivery_system-services.jpg)
 
 ## Modelagem de Dados :floppy_disk:
 
 Nosso projeto utiliza uma abordagem híbrida de modelagem de dados, otimizada para atender às necessidades específicas de cada domínio:
 
 
-![image](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/modelagem_dados_relacional.png)
+![image](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\modelagem_dados_relacional.png)
 
 - **Domínio Cliente, Pagamento, Pedido e Produto:** Seguem um modelo relacional tradicional com o Amazon RDS (MySQL), aproveitando as vantagens de schemas consistentes e relações estabelecidas.
 
@@ -85,7 +85,7 @@ Oferece maior flexibilidade para a evolução do sistema, já que a adição de 
 
 ## Instruções para Deploy da solução :building_construction:
 
-![Tech Challenge Delivery System](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/banner-version2.png)
+![Tech Challenge Delivery System](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\banner-version2.png)
 
 ### Iniciando a infraestrutura no ambiente do AWS lab :cloud:
 
@@ -109,11 +109,11 @@ Após iniciarmos o AWS Lab Academy, precisamos seguir algumas etapas para constr
 A criação de todas as filas e da função lambda estão sendo realizadas pelo repositório <a href="https://github.com/tech-challenge-group22/TC05-Shared-Infra">TC05-Shared-Infra</a>
 Todos os repositórios estão utilizando secrets e variáveis de nossa organização no Github, sendo compartilhadas entre todos os repositórios.
 
-![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/variaveis_organizacao.png)
+![banner](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\variaveis_organizacao.png)
 
 Para executar o workflow para deploy da Infra AWS ou para realizar o build da imagem docker, só precisamos selecionar a action "Deploy Infrastructure" e depois executar o workflow.
 
-![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/workflow_example.png)
+![banner](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\workflow_example.png)
 
 Após a execução ser finalizada, precisamos criar o API Gateway na função Lambda.
 
@@ -187,4 +187,4 @@ Um agradecimento especial para os colegas de grupo - Fabiano, Fellipy, Gabriel, 
 Obrigado a todos por fazerem parte desta etapa importante da nossa jornada acadêmica e profissional.
 
 
-![banner](https://github.com/carevon/TC05-Order-App/blob/feat/readme/assets/core/food_banner.png)
+![banner](https://github.com/tech-challenge-group22/TC05-Order-App/tree/main/assets/core\food_banner.png)
